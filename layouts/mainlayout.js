@@ -37,6 +37,7 @@ const MainLayout = (props) => {
             // if (orderId.indexOf('/') !== -1) orderId = orderId.slice(0,orderId.indexOf('/'));
             ls.set('atrchee-redirect',path)
             api.getOrderValidity(orderId,{}).then(response => {
+                console.log(response)
                 if(!response.data.is_link_valid) {
                     let errorReason = response.data.reason_for_invalidity;
                     let error = '';
