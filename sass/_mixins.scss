@@ -1,0 +1,105 @@
+@mixin box-shadow($left, $top, $radius, $color) {
+	box-shadow: $left $top $radius $color;
+	-webkit-box-shadow: $left $top $radius $color;
+	-moz-box-shadow: $left $top $radius $color;
+}
+
+@mixin default-shadow () {
+	box-shadow: $default-shadow;
+	-webkit-box-shadow: $default-shadow;
+	-moz-box-shadow: $default-shadow;
+}
+
+@mixin transition($property: all, $duration: .1s, $easing: linear) {
+	transition: $property $duration $easing;
+	-webkit-transition: $property $duration $easing;
+	-moz-transition: $property $duration $easing;
+}
+
+@mixin transform ($scale: 1.5){
+	-ms-transform: scale($scale); /* IE 9 */
+	-webkit-transform: scale($scale); /* Safari 3-8 */
+	transform: scale($scale);
+}
+
+@mixin border-radius($radius) {
+	border-radius: $radius;
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+}
+
+@mixin border-radii($topleft, $topright, $bottomright, $bottomleft) {
+	border-top-left-radius: $topleft;
+	border-top-right-radius: $topright;
+	border-bottom-right-radius: $bottomright;
+	border-bottom-left-radius: $bottomleft;
+	-webkit-border-top-left-radius: $topleft;
+	-webkit-border-top-right-radius: $topright;
+	-webkit-border-bottom-right-radius: $bottomright;
+	-webkit-border-bottom-left-radius: $bottomleft;
+	-moz-border-radius-topleft: $topleft;
+	-moz-border-radius-topright: $topright;
+	-moz-border-radius-bottomright: $bottomright;
+	-moz-border-radius-bottomleft: $bottomleft;
+}
+
+@mixin gradient($color1, $color2) {
+	background-color: $color1;
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#{$color1}, endColorstr=#{$color2});
+	background-image: -moz-linear-gradient(center top, $color1, $color2);
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from($color1), to($color2));
+}
+
+
+// small devices : mobile
+@mixin small {
+	@media (max-width: #{$width-sm}) {
+		@content;
+	}
+}
+@mixin small-up {
+	@media (min-width: #{$width-sm}) {
+		@content;
+	}
+}
+
+// medium devices : tabled
+@mixin medium {
+	@media (min-width: #{$width-sm}) AND (max-width: #{$width-md}) {
+		@content;
+	}
+}
+@mixin medium-up {
+	@media (min-width: #{$width-sm}) {
+		@content;
+	}
+}
+@mixin medium-down {
+	@media (max-width: #{$width-sm}) {
+		@content;
+	}
+}
+
+// large devices : desktop
+@mixin large {
+	@media (min-width: #{$width-md}) AND (max-width: #{$width-lg}) {
+		@content;
+	}
+}
+@mixin large-up {
+	@media (min-width: #{$width-md}) {
+		@content;
+	}
+}
+@mixin large-down {
+	@media (max-width: #{$width-lg}) {
+		@content;
+	}
+}
+
+// xlarge devices : wide screens
+@mixin xlarge {
+	@media (min-width: #{$width-lg}) {
+		@content;
+	}
+}

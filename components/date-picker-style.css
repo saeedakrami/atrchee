@@ -1,0 +1,34 @@
+.calendarContainer .dayWrapper button {
+    font-size: 15px !important;
+}
+
+.tether-element.tether-element-attached-top.tether-element-attached-center.tether-target-attached-bottom.tether-target-attached-center.tether-enabled {
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+}
+.calendarContainer .dayWrapper button{
+    width: 25px !important;
+    height: 25px !important;
+}
+.calendarContainer .heading .title , .rc-time-picker-input{
+    font-size: 14px !important;
+}
+.calendarContainer .selected button, .calendarContainer .selected button:active, .calendarContainer .selected button:focus, .calendarContainer .selected button:hover :not([disabled]) {
+    background-color:#861E3F !important;
+}
+.dayWrapper.currentMonth.today button {
+    border: 3px solid #861E3F !important;
+}
+.datepicker-input {
+    width: 100%;
+    text-align: center;
+    padding:0 5px 0 5px;
+}
+.ui.dropdown .menu, .ui.dropdown .menu > .item{
+    text-align: right !important;
+    font-size: 12px !important;
+}
+.search {
+    text-align: right !important;
+}

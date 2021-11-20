@@ -1,0 +1,35 @@
+.feild-label{
+    font-size: 14px;
+    padding-right: 5px;
+    margin-bottom: 0.5rem;
+    margin-right: 0.25rem;
+    color: #111;
+}
+.remaining-time{
+    font-size: 13px;
+    color: #555;
+    padding-top: 2px;
+}
+
+.login-modal{
+    min-height: 185px;
+    overflow: hidden;
+}
+
+.global-input{
+    border-radius: 6px;
+    border: 1px solid #eee;
+    padding: 3px 10px;
+    margin: 5px 1%;
+    width: 98%;
+    background: hsl(120, 4%, 95%);
+    &::placeholder{
+        color:#111;
+        opacity: 0.35;
+    }
+
+}
+
+.number{
+    direction: ltr !important; 
+}

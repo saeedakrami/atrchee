@@ -1,0 +1,311 @@
+body {
+	direction: rtl;
+	text-align: right;
+	font-family: $default-font-family, sans-serif;
+}
+
+#app,
+#app > .container {
+	min-height: calc(100vh - 251px);
+	width: 380px;
+	margin: 0 auto;
+}
+
+@media screen and (max-width: 480px) {
+	#app,
+	#app > .container,
+	.change-date-modal,
+	.menu-container {
+		width: 100% !important;
+	}
+}
+
+@keyframes spinner {
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+.bg-overlay {
+	content: "";
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+.nav-side {
+	background-color: $atrchee-primary;
+	color: $white;
+	width: $navbar-width;
+
+	&__items {
+		padding-top: 55px;
+	}
+
+	a {
+		font-size: $font-size-12;
+	}
+}
+
+.spinner {
+	content: "";
+	box-sizing: border-box;
+	display: inline-block;
+	//top: 50%;
+	//left: 50%;
+	width: 18px;
+	height: 18px;
+	margin: 0 10px;
+	margin-top: 2px;
+	border-radius: 50%;
+	border-top: 2px solid #eee;
+	border-right: 2px solid transparent;
+	animation: spinner 0.6s linear infinite;
+}
+.labelForInput {
+	right: 10px;
+	z-index: 1;
+	background: #fbfbfb;
+	top: 8px;
+	color: #998f8f;
+	height: 20px;
+	display: block;
+	overflow: hidden;
+	padding: 0 5px 0 5px;
+}
+.ui.dropdown .menu.visible {
+	display: inline-block;
+}
+
+.text-atrcheeBlack {
+	font-size: $font-size-16;
+}
+
+label {
+	font-family: $font-medium;
+}
+
+label.fanum {
+	font-family: $font-medium-fanum;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+	-moz-appearance: textfield;
+	direction: ltr;
+	text-align: right;
+}
+
+input[type="number"].text-center {
+	text-align: center;
+}
+
+a {
+	i {
+		vertical-align: middle;
+	}
+}
+
+.font-regular {
+	font-family: $font-regular !important;
+}
+.font-light {
+	font-family: $font-light !important;
+}
+.font-medium {
+	font-family: $font-medium !important;
+}
+.font-thin {
+	font-family: $font-thin !important;
+}
+.font-black {
+	font-family: $font-black !important;
+}
+.font-bold {
+	font-family: $font-bold !important;
+}
+.font-extrabold {
+	font-family: $font-extrabold !important;
+}
+
+.font-regular.fanum {
+	font-family: $font-regular-fanum !important;
+}
+.font-light.fanum {
+	font-family: $font-light-fanum !important;
+}
+.font-medium.fanum {
+	font-family: $font-medium-fanum !important;
+}
+.font-thin.fanum {
+	font-family: $font-thin-fanum !important;
+}
+.font-black.fanum {
+	font-family: $font-black-fanum !important;
+}
+.font-bold.fanum {
+	font-family: $font-bold-fanum !important;
+}
+.font-extrabold.fanum {
+	font-family: $font-extrabold-fanum !important;
+}
+
+.font-size-page-title {
+	font-size: $font-size-16 !important;
+}
+.font-size-username {
+	font-size: $font-size-15 !important;
+}
+
+.font-size-normal {
+	font-size: $font-size-12 !important;
+}
+
+.font-size-small {
+	font-size: $font-size-10 !important;
+}
+
+.btn-atrchee-red,
+.bg-atrcheeViolet {
+	font-family: $font-medium;
+	font-size: $font-size-16;
+	outline: none !important;
+}
+
+.gray-title {
+	color: $gray-title-color !important;
+}
+
+.subject {
+	font-size: $font-size-14 !important;
+}
+
+.page-section {
+	padding: 0px 30px;
+	// min-height: 100vh;
+}
+
+.padding-section {
+	padding: 0px 30px;
+}
+
+.close-icon {
+	font-size: $font-size-20;
+}
+
+.light-gray {
+	color: $light-gray !important;
+}
+
+.bg-light-gray {
+	background-color: $light-gray !important;
+}
+
+.xsmall {
+	font-size: $font-size-8;
+}
+
+.small {
+	font-size: $font-size-10;
+}
+
+.error {
+	color: $red;
+}
+
+.input-error-span {
+	position: absolute;
+	margin-top: 8px;
+}
+
+.size-7 {
+	font-size: $font-size-7 !important;
+}
+
+.size-8 {
+	font-size: $font-size-8 !important;
+}
+
+.size-9 {
+	font-size: $font-size-9 !important;
+}
+
+.size-10 {
+	font-size: $font-size-10 !important;
+}
+
+.size-11 {
+	font-size: $font-size-11 !important;
+}
+
+.size-12 {
+	font-size: $font-size-12 !important;
+}
+
+.size-13 {
+	font-size: $font-size-13 !important;
+}
+
+.size-14 {
+	font-size: $font-size-14 !important;
+}
+
+.size-15 {
+	font-size: $font-size-15 !important;
+}
+
+.size-16 {
+	font-size: $font-size-16 !important;
+}
+
+.size-17 {
+	font-size: $font-size-17 !important;
+}
+
+.size-18 {
+	font-size: $font-size-18 !important;
+}
+
+.size-19 {
+	font-size: $font-size-19 !important;
+}
+
+.size-20 {
+	font-size: $font-size-20 !important;
+}
+
+.size-25 {
+	font-size: $font-size-25 !important;
+}
+
+.gray {
+	color: $gray;
+}
+
+.dark-gray {
+	color: $dark-gray !important;
+}
+
+.white {
+	color: $white !important;
+}
+
+.pointer {
+	cursor: pointer;
+}
+
+.disabled {
+	color: $disable-gray-text !important;
+}
+
+.green {
+	color: $green;
+}

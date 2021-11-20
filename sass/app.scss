@@ -1,0 +1,19 @@
+/* // متغییرها */
+@import "variables";
+@import "fonts";
+@import "mixins";
+
+@import "loginModal";
+
+@import "init";
+
+/* AUTH */
+@import "auth/login";
+@import "nav-side";
+@import "custom";
+
+/* purgecss start ignore */
+@tailwind base;
+@tailwind components;
+/* purgecss end ignore */
+@tailwind utilities;

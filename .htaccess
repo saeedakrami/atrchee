@@ -1,0 +1,9 @@
+RewriteEngine On
+Options -Indexes
+DirectoryIndex index.html
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.html?/$1 [L]
+
+AddDefaultCharset utf-8

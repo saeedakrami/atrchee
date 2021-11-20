@@ -1,0 +1,709 @@
+.modal-container {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.option-modal {
+	position: absolute;
+	margin-top: 4px;
+	background-color: #ffffff;
+	width: calc(100% - 3.75rem);
+	box-shadow: 0 1px 6px 0 rgb(0 0 0 / 4%), 0 -8px 32px -4px rgb(0 0 0 / 8%),
+		0 16px 24px -6px rgb(0 0 0 / 4%);
+	z-index: 1000;
+}
+
+.option-modal-items {
+	max-height: 200px;
+	overflow-y: scroll;
+	outline: none;
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}
+
+.option-modal-items::-webkit-scrollbar {
+	display: none;
+}
+
+.option-item {
+	height: 40px;
+	padding-right: 8px;
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+}
+
+.option-item.selected {
+	color: $atrchee-primary;
+}
+
+.option-item:hover,
+.option-item:focus {
+	background-color: rgba(0, 0, 0, 0.1);
+	outline: none;
+}
+
+.input-arrow {
+	position: absolute;
+	left: 2.75rem;
+	margin-top: 0.5rem;
+}
+
+.select-container {
+	position: relative;
+	width: 100%;
+	height: 40px;
+	border: 1px solid $light-gray;
+	background-color: $white;
+}
+
+.textarea-container {
+	position: relative;
+	width: 100%;
+	height: 106px;
+	border: 1px solid $light-gray;
+	background-color: $white;
+}
+
+.select-container-error {
+	border-color: $red !important;
+}
+
+.select-container:hover,
+.textarea-container:hover {
+	border: 1px solid $gray;
+}
+
+.select-container-disabled,
+.select-container-disabled:hover {
+	border: 1px solid $disable-gray-border;
+}
+
+.select-container:focus-within,
+.textarea-container:focus-within {
+	border: 1px solid $light-blue;
+}
+
+.select-container > span {
+	position: absolute;
+	margin-top: 14px;
+	left: 20px;
+}
+
+select,
+input,
+textarea,
+.input-div {
+	width: 100%;
+	height: 100%;
+	border: none;
+	outline: none;
+	background-color: transparent;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	font-size: $font-size-12 !important;
+	color: $dark-gray !important;
+	resize: none !important;
+}
+
+.input-div {
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+}
+
+.placeholder {
+	color: $gray !important;
+	font-family: $font-medium;
+}
+
+input::placeholder {
+	font-size: $font-size-12;
+	color: $gray;
+	font-family: $font-medium;
+}
+
+.inline-label {
+	position: absolute;
+	color: $inner-label-color;
+	font-size: 10px;
+	background-color: $white;
+	padding: 0 4px;
+	// top: -10px;
+	right: 12px;
+	animation: showInnerLabel 0.2s linear forwards;
+}
+
+@keyframes showInnerLabel {
+	from {
+		transform: translate(0, 0px) scale(1.5, 1.5);
+	}
+	to {
+		transform: translate(0, -10px) scale(1, 1);
+	}
+}
+
+.input-left-div {
+	position: absolute;
+	display: inline;
+	left: 16px;
+	top: 12px;
+	display: flex;
+	flex-direction: row;
+}
+
+.label {
+	font-size: $font-size-12;
+	font-family: $font-regular;
+}
+
+.login-input {
+	font-size: $font-size-16 !important;
+	font-family: $font-regular-fanum !important;
+}
+
+.back {
+	cursor: pointer;
+}
+
+.back-arrow-big {
+	font-size: $font-size-12;
+	margin-left: 8px;
+}
+
+.otp-input,
+.otp-input::placeholder {
+	font-size: 17px !important;
+	font-family: $font-regular !important;
+	color: $dark-gray !important;
+	letter-spacing: 4.39px;
+}
+
+.profile-accordion-container {
+	display: flex;
+	align-items: center;
+	height: 48px;
+	border-bottom: 1px solid $light-gray;
+	width: 100%;
+	padding-left: 16px;
+}
+
+.divider {
+	width: calc(100% + 60px);
+	height: 12px;
+	background-color: #f3f3f3;
+	position: relative;
+	right: -30px;
+}
+
+.password-input {
+	letter-spacing: 4.13px;
+}
+
+.personal-info-card {
+	height: 72px;
+	border-bottom: 1px solid $light-gray;
+	padding-left: 16px;
+	align-items: center;
+}
+
+.card-number-container {
+	direction: ltr;
+}
+
+.birthdate-select {
+	background-color: $light-gray;
+	// text-align-last: center;
+	font-family: $font-regular-fanum;
+}
+
+.birthdate-select-arrow {
+	color: $dark-gray !important;
+	left: 10px !important;
+}
+
+.line-divider {
+	border-bottom: 1px solid $light-gray;
+}
+
+.horiz-divider {
+	border-right: 1px solid $light-gray;
+	height: 70%;
+}
+
+.input-checkbox {
+	border: 1px solid $dark-gray;
+	width: 16px;
+	height: 16px;
+	border-radius: 4px;
+	background-color: $white;
+}
+
+.input-radio {
+	width: 20px;
+	height: 20px;
+	border: 1px solid $dark-gray;
+	border-radius: 50%;
+	background-color: $white;
+}
+
+.input-radio::after {
+	content: "";
+	top: 2px;
+	right: 4px;
+	position: relative;
+	background-color: $white;
+	display: inline-block;
+	visibility: visible;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+}
+
+.input-radio:checked::after {
+	background-color: $atrchee-primary;
+}
+
+.input-radio:checked {
+	border-color: $atrchee-primary;
+}
+
+.input-checkbox:checked {
+	background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='white' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M5.707 7.293a1 1 0 0 0-1.414 1.414l2 2a1 1 0 0 0 1.414 0l4-4a1 1 0 0 0-1.414-1.414L7 8.586 5.707 7.293z'/%3e%3c/svg%3e");
+	border-color: transparent;
+	background-color: currentColor;
+	background-size: 100% 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	color: $atrchee-primary !important;
+	border: none;
+}
+
+.order-card {
+	border: 1px solid $light-gray;
+	border-radius: 5px;
+	padding: 12px;
+}
+
+.order-card-first-col {
+	width: 92px;
+}
+
+.order-card-second-col {
+	width: 104px;
+}
+
+.order-detail-table {
+	height: 72px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	border-bottom: 1px solid $light-gray;
+	flex-direction: column;
+	width: 50%;
+}
+
+.order-detail-table.first-col {
+	border-left: 1px solid $light-gray;
+}
+
+.order-detail-product-tabel {
+	display: flex;
+	align-items: center;
+	border-bottom: 1px solid $light-gray;
+	height: 56px;
+}
+
+.order-detail-product-tabel.small-row {
+	height: 40px;
+}
+
+.order-detail-product-tabel.big-row {
+	height: 64px;
+}
+
+.width-40 {
+	width: 40%;
+}
+
+.width-30 {
+	width: 30%;
+}
+
+// .dropdown.hide {
+// 	transform: scaleY(0);
+// 	max-height: 0px;
+// 	transform-origin: top;
+// 	transition: all 2s ease-out;
+// }
+
+// .dropdown.show {
+// 	transform: scaleY(1);
+// 	max-height: 500px;
+// 	transform-origin: top;
+// 	transition: all 2s ease-out;
+// }
+
+.bank-card-container {
+	width: 224px;
+	height: 130px;
+	position: relative;
+	background: transparent
+		radial-gradient(closest-side at 47% 44%, #ffffff 0%, #d9d9d9 100%) 0% 0%
+		no-repeat padding-box;
+	border-radius: 12px;
+	opacity: 1;
+	padding: 20px;
+}
+
+.bank-card-bottom {
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	background-color: $light-blue;
+	height: 30px;
+	border-radius: 0px 0px 12px 12px;
+	right: 0;
+}
+
+.bank-card-number {
+	color: $atrchee-primary;
+	margin-top: 10px;
+	letter-spacing: 0px;
+}
+
+.payment-card-input {
+	width: 100px;
+	height: 30px;
+	border-radius: 5px;
+	border: none;
+	outline: none;
+	background-color: $light-gray;
+	text-align: center;
+	direction: ltr;
+}
+
+.payment-card-disable-input {
+	width: 58px;
+	height: 30px;
+	border-radius: 5px;
+	background-color: $gray;
+	color: $white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 6px;
+}
+
+.payment-card-select {
+	width: 100%;
+	height: 40px;
+	border-radius: 5px;
+	background-color: $light-gray;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	cursor: pointer;
+}
+
+.payment-card-disable-select {
+	width: 85px;
+	height: 28px;
+	border-radius: 5px;
+	background-color: $gray;
+	color: $white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.change-date-modal-container {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	background-color: rgba(74, 74, 74, 0.38);
+}
+
+.change-date-modal {
+	position: fixed;
+	margin-right: -30px;
+	width: 380px;
+	bottom: 0;
+	height: auto;
+	background-color: $white;
+	border-radius: 15px 15px 0 0;
+	padding: 20px 30px 36px 30px;
+	animation: from-bottom 0.3s ease-out;
+}
+
+@keyframes from-bottom {
+	from {
+		transform: translateY(292px);
+	}
+	to {
+		transform: translateY(0px);
+	}
+}
+
+.date-modal-options-container {
+	width: 270px;
+	height: 220px;
+	overflow-y: scroll;
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}
+
+.date-modal-options-container::-webkit-scrollbar,
+.time-select-numbers::-webkit-scrollbar {
+	display: none;
+}
+
+.date-modal-option {
+	width: 100%;
+	height: 49px;
+	background-color: $white;
+	border-radius: 23px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 8px;
+}
+
+.date-modal-option > label {
+	width: 90%;
+}
+
+.bg-very-light-gray {
+	background-color: $very-light-gray;
+}
+
+.payment-amount-container {
+	width: 100%;
+	border-radius: 15px;
+	padding: 38px 12px;
+	background-color: #f2f2f2ba;
+}
+
+.total-amount-div {
+	background-color: $white;
+	border-radius: 15px;
+	padding: 8px;
+}
+
+.scroll-select-container {
+	width: 91px;
+	height: 87px;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+}
+
+.time-select-numbers {
+	overflow-y: scroll;
+	height: 87px;
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+	width: 100%;
+	padding-bottom: 20px;
+	padding-top: 38px;
+	transition: scroll 0.5s linear;
+}
+
+.selected-time-flag,
+.selected-birthday-flag {
+	height: 29px;
+	border: 2px solid $atrchee-primary;
+	border-radius: 20px;
+	position: absolute;
+	top: 29px;
+}
+
+.selected-time-flag {
+	width: 91px;
+}
+
+.selected-birthday-flag {
+	width: 91px;
+}
+
+.noselect {
+	-webkit-touch-callout: none; /* iOS Safari */
+	-webkit-user-select: none; /* Safari */
+	-khtml-user-select: none; /* Konqueror HTML */
+	-moz-user-select: none; /* Old versions of Firefox */
+	-ms-user-select: none; /* Internet Explorer/Edge */
+	user-select: none;
+}
+
+.time-modal-button-div {
+	width: 78px;
+	height: 28px;
+}
+
+.menu-container {
+	width: 380px;
+	height: 85px;
+	background-color: #f5f5f5;
+	bottom: 0;
+	padding: 20px 20px 16px 20px;
+	display: flex;
+	justify-content: space-between;
+	z-index: 1000;
+}
+
+.select-default-address {
+	width: 91px;
+}
+
+.menu-items {
+	color: #bebebe;
+	cursor: pointer;
+}
+
+.menu-items:hover {
+	color: $atrchee-primary;
+}
+
+.menu-items.this-page {
+	color: $atrchee-primary;
+}
+
+.order-item-container {
+	width: 100%;
+	height: 144px;
+	background: #f1f1f2ba;
+	border-radius: 15px;
+	padding: 20px;
+	position: relative;
+}
+
+.order-item-image-container {
+	width: 88px;
+	height: 104px;
+	background-color: $white;
+	border-radius: 15px;
+}
+
+.order-item-discount {
+	width: 32px;
+	height: 32px;
+	border-radius: 50%;
+	background-color: #5eb670;
+	position: absolute;
+	top: 12px;
+	right: 12px;
+}
+
+.picker-item-selected {
+	color: $atrchee-primary !important;
+	font-family: $font-bold-fanum;
+}
+
+.picker-highlight {
+	display: none;
+}
+
+.picker-inner {
+	padding: 0 !important;
+}
+
+.order-list-card {
+	width: 100%;
+	height: 92px;
+	border-radius: 15px;
+	background-color: #f2f2f29e;
+	padding: 0 20px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.order-list-card-count {
+	width: 26px;
+	height: 26px;
+	border-radius: 50%;
+	background-color: #bebebe;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.bg-atrcheePrimary {
+	background-color: $atrchee-primary;
+}
+
+.orders-list-container {
+	width: 100%;
+	min-height: 136px;
+	border: solid 1px #e0e0e2;
+	border-radius: 5px;
+	padding: 20px;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+}
+
+.product-thumbnail-pic {
+	width: 40px;
+	height: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-left: 1px solid $light-gray;
+}
+
+.product-thumbnail-pic:last-child {
+	border: none;
+}
+
+.ordersList-button-container {
+	width: 80px;
+	height: 28px;
+}
+
+.bg-success {
+	background-color: #00ae40a1 !important;
+}
+
+.scroll-picker-container {
+	z-index: 10001;
+	width: 100%;
+}
+
+.scroll-picker-column {
+	position: relative;
+	max-height: 100%;
+	overflow: hidden;
+	text-align: center;
+}
+
+.scroll-picker-scroller {
+	transition: 0.3s;
+	transition-timing-function: ease-out;
+}
+
+.scroll-picker-item {
+	position: relative;
+	padding: 0 10px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.scroll-picker-item-selected {
+	color: $atrchee-primary;
+	font-family: $font-bold-fanum;
+}
+
+body.modal-open {
+	overflow: hidden;
+	-webkit-overflow-scrolling: touch;
+}

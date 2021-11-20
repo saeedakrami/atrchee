@@ -1,0 +1,46 @@
+.atrchee-logo {
+	background: url("../../public/image/Atrchee_small-logo_216x90.png") no-repeat
+		center center transparent;
+	background-size: cover;
+	display: block;
+	width: $logo-width;
+	height: $logo-height;
+}
+
+.atrchee-logo.profile-logo {
+	background-size: contain;
+	width: 88px;
+	height: 37px;
+}
+
+.btn-login,
+.btn-atrchee {
+	padding: 0 !important;
+	height: $btn-height;
+}
+
+.input-token {
+	direction: ltr;
+
+	&:hover {
+		border-color: #b2b2b2;
+	}
+}
+
+.password-entry {
+	i {
+		vertical-align: middle;
+	}
+}
+
+.input-get-password {
+	padding: 0;
+	margin: 0;
+
+	&:active {
+		outline: none;
+	}
+	&:focus {
+		outline: none;
+	}
+}

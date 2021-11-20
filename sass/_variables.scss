@@ -1,0 +1,128 @@
+// PATH
+$webfont-dir: "../fonts/";
+
+// SIZE
+$width-sm: 540px;
+$width-md: 720px;
+$width-lg: 960px;
+$width-xl: 1280px;
+$movable-height: 450px;
+
+// DIRECTION
+$defautl-direction: rtl;
+
+// ICONS
+$icons-tiny-width: 27px;
+$icons-tiny-height: 27px;
+
+// COLORS
+$primary-color: #dc3545;
+$primary-color-lighten-10: lighten($primary-color, 10);
+$logo-color-1: #3e948f;
+$logo-color-2: #286562;
+$logo-color-3: #5aa97d;
+$secondary-color: #33adff;
+$default-dark-background: #212121;
+$secondary-background: #f3f3f3;
+$dark-blue-color: rgb(1, 13, 70);
+$dark-gray-color: #212121;
+$gray-color: rgb(122, 122, 122);
+$post-title-color: rgb(58, 58, 58);
+$light-font-color: rgb(104, 104, 104);
+$post-head-line-color: $light-font-color;
+$dark-link: #888;
+$link-hover: rgb(0, 94, 218);
+$active-color: #53b5aa;
+$blue-text: #0fabc6;
+$del-color: rgb(245, 132, 132);
+
+$very-light-gray: #f9f9f9;
+$light-gray: #e0e0e2;
+$gray: #b2b2b2;
+$red: #f00;
+$green: #00ae40;
+$white: #fff;
+$black: #000;
+$dark-gray: #62666d;
+$atrchee-primary: #861e3f;
+$light-blue: #12b4cd;
+$disable-gray-text: #d9d9d9;
+$disable-gray-border: #f1f1f1;
+
+// FONTS
+$default-font-family: "yekan"; //'Yekan';
+$default-font-color: #626263;
+$gray-title-color: #62666d;
+$date-font-color: #ababab;
+$inner-label-color: #b2b2b2;
+$font-size-7: 7px;
+$font-size-8: 8px;
+$font-size-9: 9px;
+$font-size-10: 10px;
+$font-size-11: 11px;
+$font-size-12: 12px;
+$font-size-13: 13px;
+$font-size-14: 14px;
+$font-size-15: 15px;
+$font-size-16: 16px;
+$font-size-17: 17px;
+$font-size-18: 18px;
+$font-size-19: 19px;
+$font-size-20: 20px;
+$font-size-25: 25px;
+$font-size-30: 30px;
+$font-size-h3: $font-size-19;
+$font-size-h2: $font-size-25;
+
+$font-light: "yekan-light";
+$font-medium: "yekan-medium";
+$font-bold: "yekan-bold";
+$font-black: "yekan-black";
+$font-regular: "yekan";
+$font-thin: "yekan-thin";
+$font-extrabold: "yekan-extrabold";
+
+$font-light-fanum: "fanum-yekan-light";
+$font-medium-fanum: "fanum-yekan-medium";
+$font-bold-fanum: "fanum-yekan-bold";
+$font-black-fanum: "fanum-yekan-black";
+$font-regular-fanum: "fanum-yekan";
+$font-thin-fanum: "fanum-yekan-thin";
+$font-extrabold-fanum: "fanum-yekan-extrabold";
+
+// BORDERS
+$default-border-radius: 5px;
+$default-border-color-light: #aaa;
+$default-border-color-dark: #888;
+$default-border-width: 1px;
+
+// SPACES
+$pad: 1rem;
+$pad-half: $pad / 2;
+$pad-double: $pad * 2;
+$pad-tow-third: $pad + $pad-half;
+$margin: 1rem;
+$margin-half: $margin / 2;
+$margin-double: $margin * 2;
+
+$section-padding: $pad * 4;
+
+// SHADOWS
+$default-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+$default-box-shadow-color: #aaa;
+$default-box-shadow-dark: #888;
+
+// IMAGES
+$default-img-path: "../img/";
+
+// PAGES
+$banner-height: 450px;
+
+// BUTTONS
+$btn-height: 41px;
+$btn-font-size: 14px;
+
+// PAGE VARIABLES
+$navbar-width: 149px;
+$logo-width: 142px;
+$logo-height: 59px;
